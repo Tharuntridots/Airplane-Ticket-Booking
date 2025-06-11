@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-05-22 19:19:05.026713",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xoth",
+  "medicine_name",
+  "dosage",
+  "frequency"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xoth",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "medicine_name",
+   "fieldtype": "Data",
+   "label": "Medicine Name"
+  },
+  {
+   "fieldname": "dosage",
+   "fieldtype": "Data",
+   "label": "Dosage"
+  },
+  {
+   "default": "Once a day",
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "label": "Frequency",
+   "options": "Once a day\nTwice a day"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-05-22 19:20:10.320147",
+ "modified_by": "Administrator",
+ "module": "Frappetest",
+ "name": "Prescription",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

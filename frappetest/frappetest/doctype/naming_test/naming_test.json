@@ -1,0 +1,108 @@
+{
+ "actions": [
+  {
+   "action": "frappetest.frappetest.action.execute_function",
+   "action_type": "Server Action",
+   "label": " Action"
+  }
+ ],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:name1",
+ "creation": "2025-05-21 15:03:46.980926",
+ "default_email_template": "aravindth",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_l7vz",
+  "amended_from",
+  "name1",
+  "bar",
+  "number",
+  "options",
+  "route",
+  "published"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_l7vz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Naming Test",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "depends_on": "doc.options == 2",
+   "fieldname": "bar",
+   "fieldtype": "Barcode",
+   "label": "bar"
+  },
+  {
+   "fieldname": "number",
+   "fieldtype": "Int",
+   "label": "number"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "name",
+   "unique": 1
+  },
+  {
+   "fieldname": "options",
+   "fieldtype": "Select",
+   "label": "options",
+   "options": "1\n2\n3"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "route"
+  },
+  {
+   "default": "1",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "published"
+  }
+ ],
+ "grid_page_length": 50,
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-05-22 16:46:10.450142",
+ "modified_by": "Administrator",
+ "module": "Frappetest",
+ "name": "Naming Test",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "route": "teacher",
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

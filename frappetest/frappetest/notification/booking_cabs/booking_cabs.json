@@ -1,0 +1,31 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2025-05-30 18:55:49.428467",
+ "days_in_advance": 0,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Vehicles",
+ "enabled": 1,
+ "event": "Submit",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>vehicle booking</p>\n",
+ "message_type": "Markdown",
+ "modified": "2025-05-30 19:04:25.220927",
+ "modified_by": "Administrator",
+ "module": "Frappetest",
+ "name": "Booking cabs",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "owner",
+   "receiver_by_role": "All"
+  }
+ ],
+ "send_system_notification": 1,
+ "send_to_all_assignees": 0,
+ "sender": "Tharun",
+ "sender_email": "tharunkumar1206@gmail.com",
+ "subject": "{{doc.customer_name}} book a vehicle"
+}

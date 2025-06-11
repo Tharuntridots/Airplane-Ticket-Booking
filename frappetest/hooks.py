@@ -242,3 +242,113 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+# --------------------------------------------------------------------------------
+
+# app_include_js = "/assets/frappetest/js/email_reminder.js"
+# scheduler_events = {
+#     "hourly": [
+#         "frappetest.emailreminder.emailreminder.send_reminder"
+#     ]
+# }
+
+# doc_events = {
+#     "Chat Message": {
+#         "on_submit": "frappetest.frappetest.doctype.chat_message.chat_message.on_submit"
+#     }
+# }
+
+# webform_include_js = {
+#     "Test ToDo": "public/js/custom_todo.js"
+# }
+
+# webform_include_css = {
+#     "Test ToDo": "public/css/custom_todo.css"
+# }
+
+
+# doctype_js = {
+#     "Test ToDo": "public/js/custom_todo.js"
+# }
+
+# doctype_css = {
+#     "Test ToDo": "public/css/custom_todo.css"
+# }
+
+# # In hooks.py
+# doctype_python = {
+#     "Test ToDo": "frappetest.frappetest.doctype.test_todo.test_todo"
+# }
+
+# # hooks.py
+
+# scheduler_events = {
+#     "cron": {
+#         "*/2 * * * *": [
+#             "frappetest.background_task_demo.mark_tasks_completed",
+#             "frappetest.background_task_demo.cancel_completed_tasks"
+#         ]
+#     }
+# }
+
+
+# app_include_js = "/assets/frappetest/js/chart_renderer.js"
+
+# doctype_js = {
+#     "TestImport": "public/js/testimport.js"
+# }
+
+
+# doctype_js = {
+#     "TestImport": "public/js/testimport.js"
+# }
+
+
+# doc_events = {
+#     "Purchase Note": {
+#         "after_insert": "frappetest.frappetest.note_api.send_note_realtime"
+#     }
+# }
+
+
+# app_include_js = "/assets/frappetest/js/samosa.js"
+
+
+# # doctype_js = {
+# #     "Samosa Shop": "public/js/samosa_shop.js"
+# # }
+
+
+# page_js = {
+#     "vehicle-chart": "public/js/vehicle_chart.js"
+# }
+
+
+
+# ===================================================================================================================================================================================
+#*** Important ***
+
+# website_context = {
+#     "favicon": "/assets/frappetest/images/favicon.png"
+# }
+
+
+# home_page = "Homepage"
+
+web_form_include_js = {
+    "flight-ticket-booking": "public/js/flight_ticket_booking.js"
+}
+
+app_include_js = [
+    "https://checkout.razorpay.com/v1/checkout.js"
+]
+
+doctype_js = {
+    "Airplane Ticket": "public/js/airplane_ticket.js"
+}
+
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+# Desk app_include_js 
+

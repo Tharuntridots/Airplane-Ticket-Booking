@@ -1,0 +1,75 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "Emp-.###",
+ "creation": "2025-05-21 12:53:39.406885",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_p6za",
+  "emp_name",
+  "emp_role",
+  "emp_salrary",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_p6za",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "emp_name",
+   "fieldtype": "Data",
+   "label": "Emp Name"
+  },
+  {
+   "default": "Engineer",
+   "fieldname": "emp_role",
+   "fieldtype": "Select",
+   "label": "Emp Role ",
+   "options": "Engineer\nDoctor\nLawyer"
+  },
+  {
+   "fieldname": "emp_salrary",
+   "fieldtype": "Float",
+   "label": "Emp salrary "
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Customer Data",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-05-21 13:32:57.613842",
+ "modified_by": "Administrator",
+ "module": "Frappetest",
+ "name": "Customer Data",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

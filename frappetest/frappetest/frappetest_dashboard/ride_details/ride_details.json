@@ -1,0 +1,29 @@
+{
+ "cards": [
+  {
+   "card": "Average of Ride_count"
+  }
+ ],
+ "charts": [
+  {
+   "chart": "Driver chart",
+   "width": "Full"
+  },
+  {
+   "chart": "vehicle report",
+   "width": "Half"
+  }
+ ],
+ "creation": "2025-06-02 16:55:49.168241",
+ "dashboard_name": "Ride details",
+ "docstatus": 0,
+ "doctype": "Dashboard",
+ "idx": 0,
+ "is_default": 1,
+ "is_standard": 1,
+ "modified": "2025-06-02 19:08:54.287380",
+ "modified_by": "Administrator",
+ "module": "Frappetest",
+ "name": "Ride details",
+ "owner": "Administrator"
+}

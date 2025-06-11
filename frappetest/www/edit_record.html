@@ -1,0 +1,22 @@
+<!-- <h2>Medical Records  </h2>
+<p><strong>Patient Name:</strong> {{ doc.patient_name }}</p>
+<p><strong>Diseases:</strong> {{ doc.diseases }}</p>
+<p><strong>Date:</strong> {{ doc.date }}</p>
+<p><strong>Doctor:</strong> {{ doc.doctor }}</p>
+
+{% if "fever" in doc.diseases.lower() %}
+    <p><em>Note: Monitor temperature regularly.</em></p>
+{% endif %} -->
+
+
+<h2>Edit Medical Record</h2>
+
+<form method="post">
+    <p><strong>Patient Name:</strong> <input name="patient_name" value="{{ doc.patient_name }}"></p>
+    <p><strong>Diseases:</strong> <input name="diseases" value="{{ doc.diseases }}"></p>
+    <p><strong>Date:</strong> <input name="date" value="{{ doc.date }}"></p>
+    <p><strong>Doctor:</strong> <input name="doctor" value="{{ doc.doctor }}"></p>
+    <button type="submit">Update</button>
+</form>
+>
+

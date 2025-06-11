@@ -1,0 +1,96 @@
+
+
+
+{% extends "templates/web.html" %}
+
+{% block page_content %}
+<h2>Customer Data Records</h2>
+
+<!-- Add New Customer Form -->
+<form id="add-customer-form">
+    <input type="text" id="emp_name" placeholder="Name" required>
+    <input type="text" id="emp_role" placeholder="Role" required>
+    <input type="number" id="emp_salrary" placeholder="Salary" required>
+    <button type="submit">Add Customer</button>
+</form>
+
+<!-- Display Records -->
+<div id="customer-records"></div>
+{% endblock %}
+
+{% block script %}
+<script>
+    frappe.ready(() => {
+        loadCustomers();
+
+        // ADD customer
+        document.getElementById("add-customer-form").onsubmit = function (e) {
+            e.preventDefault();
+            frappe.call({
+                method: "frappetest.frappetest.doctype.customer_data.customer_data.add_customer",
+                args: {
+                    emp_name: document.getElementById("emp_name").value,
+                    emp_role: document.getElementById("emp_role").value,
+                    emp_salrary: document.getElementById("emp_salrary").value
+                },
+                callback: function () {
+                    loadCustomers();
+                    document.getElementById("add-customer-form").reset();
+                }
+            });
+        };
+    });
+
+    function loadCustomers() {
+        frappe.call({
+            method: "frappetest.frappetest.doctype.customer_data.customer_data.get_customer_data",
+            callback: function (r) {
+                const container = document.getElementById("customer-records");
+                container.innerHTML = "";
+                if (r.message && r.message.length > 0) {
+                    r.message.forEach(row => {
+                        const div = document.createElement("div");
+                        div.innerHTML = `
+                            <p><b>Name:</b> <input value="${row.emp_name}" id="name-${row.name}">
+                            <b>Role:</b> <input value="${row.emp_role}" id="role-${row.name}">
+                            <b>Salary:</b> <input value="${row.emp_salrary}" id="salary-${row.name}">
+                            <button onclick="updateCustomer('${row.name}')">Update</button>
+                            <button onclick="deleteCustomer('${row.name}')">Delete</button></p>
+                        `;
+                        container.appendChild(div);
+                    });
+                } else {
+                    container.innerHTML = "<p>No Customer Data found.</p>";
+                }
+            }
+        });
+    }
+
+    function updateCustomer(name) {
+        frappe.call({
+            method: "frappetest.frappetest.doctype.customer_data.customer_data.update_customer",
+            args: {
+                name: name,
+                emp_name: document.getElementById(`name-${name}`).value,
+                emp_role: document.getElementById(`role-${name}`).value,
+                emp_salrary: document.getElementById(`salary-${name}`).value
+            },
+            callback: function () {
+                loadCustomers();
+            }
+        });
+    }
+
+    function deleteCustomer(name) {
+        if (confirm("Are you sure you want to delete this record?")) {
+            frappe.call({
+                method: "frappetest.frappetest.doctype.customer_data.customer_data.delete_customer",
+                args: { name },
+                callback: function () {
+                    loadCustomers();
+                }
+            });
+        }
+    }
+</script>
+{% endblock %}

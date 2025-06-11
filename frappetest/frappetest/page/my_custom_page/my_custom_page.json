@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2025-05-24 15:06:58.506128",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2025-05-24 15:06:58.506128",
+ "modified_by": "Administrator",
+ "module": "Frappetest",
+ "name": "my-custom-page",
+ "owner": "Administrator",
+ "page_name": "my-custom-page",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "custom page"
+}

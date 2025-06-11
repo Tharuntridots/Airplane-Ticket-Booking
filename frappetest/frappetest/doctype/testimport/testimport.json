@@ -1,0 +1,74 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "creation": "2025-05-21 18:05:08.065566",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_xj2g",
+  "driverid",
+  "firstname",
+  "lastname",
+  "phonenumber",
+  "licensenumber"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_xj2g",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "driverid",
+   "fieldtype": "Int",
+   "label": "DriverID"
+  },
+  {
+   "fieldname": "firstname",
+   "fieldtype": "Data",
+   "label": "FirstName"
+  },
+  {
+   "fieldname": "lastname",
+   "fieldtype": "Data",
+   "label": "LastName"
+  },
+  {
+   "default": "91",
+   "fieldname": "phonenumber",
+   "fieldtype": "Data",
+   "label": "PhoneNumber"
+  },
+  {
+   "fieldname": "licensenumber",
+   "fieldtype": "Data",
+   "label": "LicenseNumber"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-05-21 18:10:41.007703",
+ "modified_by": "Administrator",
+ "module": "Frappetest",
+ "name": "TestImport",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
