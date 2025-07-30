@@ -15,8 +15,8 @@ frappe.pages['test-page'].on_page_load = function(wrapper) {
 	page.add_inner_button('Update Posts', () => update_posts())
 	
 	page.add_inner_button('New Post', () => new_post(), 'Make')
-	page.remove_inner_button('Update Posts')
-	page.change_inner_button_type('Delete Posts', 'Actions', 'danger');
+	// page.remove_inner_button('Update Posts')
+	// page.change_inner_button_type('Delete Posts', 'Actions', 'danger');
 	// page.clear_inner_toolbar()
 
 	let field = page.add_field({
@@ -29,6 +29,7 @@ frappe.pages['test-page'].on_page_load = function(wrapper) {
 		}
 	});
 	let  values = page.get_form_values();
+	page.clear_fields()
 
 	
 }

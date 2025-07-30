@@ -1,0 +1,23 @@
+{
+  "name": "frappetest",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tharuntridots/Airplane-Ticket-Booking.git"
+  },
+  "author": "Tharuntridots <tharunkumar@tridots.com>",
+  "license": "MIT",
+  "description": "this is for test purpose",
+  "bugs": {
+    "url": "https://github.com/Tharuntridots/Airplane-Ticket-Booking/issues"
+  },
+  "homepage": "https://github.com/Tharuntridots/Airplane-Ticket-Booking#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "frappe-ui": "^0.1.173"
+  }
+}
